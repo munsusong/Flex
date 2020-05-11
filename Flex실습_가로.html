@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 수평 정렬</title>
+    <style>
+        body {
+            background-color: #ffeead;
+            margin: 10px;
+        }
+
+        .container div {
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            color: #ffeead;
+            min-width: 200px;
+        }
+
+        .home {
+            background-color: #96ceb4;
+            /* margin-right: auto; */
+            flex: 1;
+            order: 2;
+        }
+
+        .search {
+            background-color: #ff6f69;
+            flex: 2;
+            order: 3;
+        }
+
+        .logout {
+            background-color: skyblue;
+            flex: 1;
+            order: 1;
+        }
+
+        .container {
+            border: 5px solid #ffcc5c;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap; /*넘칠 경우 아래 줄로 자동 정렬할 수 있도록 함 */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+
+</html>
