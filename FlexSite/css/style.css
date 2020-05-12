@@ -196,8 +196,8 @@ lead{
 #clients .items img{
     display: block;
     margin: auto;
-    height: 100px;
-    width: 100px;
+    height: 70%;
+    width: 70%;
 }
 
 /* 섹션: 컨택트 */
